@@ -17,3 +17,10 @@
 
   http://www.imparareaprogrammare.it
 */
+
+function cats(x, y) {
+  let row = Math.ceil(x / y);
+  let missing = (row * y) - x;
+  console.log('Numero di file = ' + row + ', gatti mancanti = ' + missing);
+}
+cats(44, 6);
