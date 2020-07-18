@@ -11,3 +11,10 @@
 
   http://www.imparareaprogrammare.it
 */
+
+function age(x, y) {
+  let years = x - y;
+  let century = 100 - years;
+  console.log('Età = ' + years + ', anni mancanti = ' + century);
+}
+age(2018, 1991);
