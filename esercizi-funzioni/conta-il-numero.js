@@ -14,7 +14,7 @@
 */
 
 function conta(x) {
-  let a = x.toString().split('')
+  let a = x.toString();
   console.log(a.length + ' cifre');
 }
 conta(245);
