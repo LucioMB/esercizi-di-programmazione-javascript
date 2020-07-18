@@ -12,3 +12,11 @@
 
   http://www.imparareaprogrammare.it
 */
+
+function time(x) {
+  let o = parseInt(x / 3600);
+  let m = parseInt((x - (3600 * o)) / 60);
+  let s = x - (3600 * o) - (60 * m)
+  console.log(o + ' ore, ' + m + ' minuti e ' + s + ' secondi')
+}
+time(12560)
