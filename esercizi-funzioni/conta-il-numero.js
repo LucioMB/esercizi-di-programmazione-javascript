@@ -12,3 +12,9 @@
     
   http://www.imparareaprogrammare.it
 */
+
+function conta(x) {
+  let a = x.toString().split('')
+  console.log(a.length + ' cifre');
+}
+conta(245);
