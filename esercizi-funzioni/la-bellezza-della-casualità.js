@@ -8,3 +8,11 @@
 
   http://www.imparareaprogrammare.it
 */
+
+function random(min, max) {
+  let mi = Math.ceil(min)
+  let ma = Math.ceil(max)
+  let a = Math.ceil(Math.random() * (ma - mi))
+  console.log(a)
+}
+random(0, 100)
