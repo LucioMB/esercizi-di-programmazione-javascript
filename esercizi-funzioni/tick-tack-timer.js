@@ -14,3 +14,10 @@
             
   http://www.imparareaprogrammare.it
 */
+
+function tickTack(x) {
+  for (let i = x-1; i >= 0; i--) {
+    console.log(i)
+  }
+}
+tickTack(12);
