@@ -10,3 +10,10 @@
     
   http://www.imparareaprogrammare.it
 */
+
+function find(N, K) {
+  let a = N.toString().slice(K, K+1)
+  let b = N.toString().length
+  console.log(Number(b < K ? 0 : a))
+}
+find(123456, 3)
