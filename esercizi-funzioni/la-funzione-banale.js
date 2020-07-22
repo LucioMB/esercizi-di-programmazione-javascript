@@ -16,3 +16,8 @@
     
   http://www.imparareaprogrammare.it
 */
+
+function iden(a, b) {
+  console.log(a === b)
+}
+iden(4, '4')
