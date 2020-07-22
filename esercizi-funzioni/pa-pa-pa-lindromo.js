@@ -14,3 +14,10 @@
 
   http://www.imparareaprogrammare.it
 */
+
+function palind(str) {
+  let a = str.replace(/\W/g, '').split('').reverse().join('');
+  let b = str.replace(/\W/g, '');
+  console.log(a === b);
+}
+palind('i topi non avevano nipoti');
