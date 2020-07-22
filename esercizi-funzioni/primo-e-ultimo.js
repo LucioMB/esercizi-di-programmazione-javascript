@@ -13,3 +13,18 @@
 
   http://www.imparareaprogrammare.it
 */
+
+function minMax(a, b, c) {
+  console.log(`minore = ${Math.min(a, b, c)}, maggiore = ${Math.max(a, b, c)}`);
+}
+minMax(-120, -6, 800);
+
+// Variante
+
+function minMax(arr) {
+  let arr2 = arr.sort((x, y) => x - y);
+  let min = arr2.shift();
+  let max = arr2.pop();
+  console.log(`minore = ${min}, maggiore = ${max}`);
+}
+minMax([-120, -6, 800, 523, 1009, -362]);
