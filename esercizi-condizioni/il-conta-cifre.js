@@ -11,3 +11,9 @@
 
   http://www.imparareaprogrammare.it
 */
+
+function cifre(n) {
+  let a = n.toString().length
+  console.log(a === 1 ? a + ' cifra' : a + ' cifre')
+}
+cifre(59)
