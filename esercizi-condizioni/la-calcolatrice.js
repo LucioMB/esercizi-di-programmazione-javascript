@@ -28,3 +28,24 @@
 
   http://www.imparareaprogrammare.it
 */
+
+function calc(a, b, c) {
+  switch(c) {
+    case 'somma': console.log(a + b);
+      break;
+    case 'sottrazione': console.log(a - b);
+      break;
+    case 'moltiplicazione': console.log(a * b);
+      break;
+    case 'divisione': console.log(a / b);
+      break;
+    case 'modulo': console.log(Math.floor(a % b));
+      break;
+    case 'potenza': console.log(a**b)
+      break;
+    case 'media': console.log((a * b) / 2);
+      break;
+    default: console.log('Operazione non supportata')
+  }
+}
+calc(22,4,'media')
