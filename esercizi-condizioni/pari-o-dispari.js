@@ -15,3 +15,8 @@
 
   http://www.imparareaprogrammare.it
 */
+
+function num(x) {
+  console.log(x % 2 === 0 ? 0 : 1)
+}
+num(24)
