@@ -10,3 +10,11 @@
 
   http://www.imparareaprogrammare.it
 */
+
+function minMax(m) {
+  let a = m.sort((x, y) => x - y)
+  let min = a.shift()
+  let max = a.pop()
+  console.log('Maggiore = ' + max + ',' + ' Minore = ' + min)
+}
+minMax([3, 8, 1, -7])
