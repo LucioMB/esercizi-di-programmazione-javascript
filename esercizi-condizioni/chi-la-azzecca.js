@@ -19,3 +19,12 @@
 
   http://www.imparareaprogrammare.it
 */
+
+function vinto(x, y) {
+  let a = Math.floor(Math.random() * (100-1) + 1);
+  console.log('Il numero casuale è: ' + a + ' - ' + (x === a ? 'Il giocatore 1 ha vinto!!!' : y === a ? 'Il giocatore 2 ha vinto!!!' : 
+                  (Math.abs(x - a) < Math.abs(y - a)) ? 'Nessuno dei due ha azzeccato il numero casuale, ma il giocatore 1 si è avvicinato di più!' : 
+                  (Math.abs(x - a) > Math.abs(y - a)) ? 'Nessuno dei due ha azzeccato il numero casuale, ma il giocatore 2 si è avvicinato di più!' : 
+                                                     'I giocatori sono pari'))
+}
+vinto(19, 10)
