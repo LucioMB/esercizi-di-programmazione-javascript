@@ -47,7 +47,7 @@ day(6)
 
 //Variante mesi
 
-function day(x) {
+function month(x) {
   switch (x) {
     case 1: console.log('Gennaio');
       break;
@@ -76,4 +76,4 @@ function day(x) {
     default: console.log('Errore! Mese dell\'anno non valido!')
 }
 }
-day(2)
+month(2)
