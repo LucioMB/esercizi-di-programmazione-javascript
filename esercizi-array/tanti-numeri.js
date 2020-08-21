@@ -12,3 +12,25 @@
 
   http://www.imparareaprogrammare.it
 */
+
+function media(x) {
+  let a = x.reduce((tot, unit) => tot + unit);
+  let b = x.length;
+  let media = a / b;
+  let min = x.sort((y, z) => y - z).filter(v => v < media)
+  let max = x.sort((y, z) => y - z).filter(v => v > media)
+  console.log('La media è: ' + media + ', ' + 'valori miniri della media: ' + '[' + min + ']' + ', ' + 'valori maggiori della media: ' + '[' + max + ']')
+}
+media([3, 5, 10, 2, 8])
+
+//usando i backtick
+
+function media(x) {
+  let a = x.reduce((tot, unit) => tot + unit);
+  let b = x.length;
+  let media = a / b;
+  let min = x.sort((y, z) => y - z).filter(v => v < media)
+  let max = x.sort((y, z) => y - z).filter(v => v > media)
+  console.log(`La media è: ${media}, valori miniri della media: [${min}], valori maggiori della media: [${max}]`)
+}
+media([3, 5, 10, 2, 8])
