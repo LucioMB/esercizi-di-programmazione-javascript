@@ -19,7 +19,7 @@ function media(x) {
   let media = a / b;
   let min = x.sort((y, z) => y - z).filter(v => v < media)
   let max = x.sort((y, z) => y - z).filter(v => v > media)
-  console.log('La media è: ' + media + ', ' + 'valori miniri della media: ' + '[' + min + ']' + ', ' + 'valori maggiori della media: ' + '[' + max + ']')
+  console.log('La media è: ' + media + ', ' + 'valori minori della media: ' + '[' + min + ']' + ', ' + 'valori maggiori della media: ' + '[' + max + ']')
 }
 media([3, 5, 10, 2, 8])
 
@@ -31,6 +31,6 @@ function media(x) {
   let media = a / b;
   let min = x.sort((y, z) => y - z).filter(v => v < media)
   let max = x.sort((y, z) => y - z).filter(v => v > media)
-  console.log(`La media è: ${media}, valori miniri della media: [${min}], valori maggiori della media: [${max}]`)
+  console.log(`La media è: ${media}, valori minori della media: [${min}], valori maggiori della media: [${max}]`)
 }
 media([3, 5, 10, 2, 8])
